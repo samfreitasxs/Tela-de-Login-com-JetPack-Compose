@@ -72,3 +72,22 @@ fun AnimatedBorderCard(
         }
     }
 }
+
+
+@Composable
+@Preview
+private fun AnimatedBorderCardPreview(){
+    AnimatedBorderCard (
+        modifier = Modifier.fillMaxWidth().height(200.dp),
+        shape = RoundedCornerShape(30.dp),
+        borderWidth = 10.dp,
+        gradient = Brush.sweepGradient(
+            listOf(
+                Blue500,
+                Blue200
+            )
+        ),
+        animationDuration = 10000
+        ){
+    }
+}
