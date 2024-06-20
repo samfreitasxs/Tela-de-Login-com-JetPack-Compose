@@ -73,6 +73,14 @@ fun FormLogin(){
             gradient = Brush.sweepGradient(listOf(Blue500, Blue200))
         ) {
 
+            Column (
+                modifier = Modifier.padding(all = 24.dp),
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ){
+
+
+            }
         }
 
     }
